@@ -10,4 +10,4 @@ router = APIRouter(
 
 @router.get("")
 async def get_bookings() -> list[SBooking]:
-    return await BookingDAO.find_one_or_none()
+    return await BookingDAO.find_all()
